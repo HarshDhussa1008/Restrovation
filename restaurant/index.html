@@ -26,8 +26,16 @@
 					-->
 				</a>
 			</nav>
-			<div class="col-md-12 offers">
-
+			<div class="col-sm-12 offers">
+				<div class="col-sm-4 offer" >
+					<img src="offer.png" alt='Offer'>
+				</div>
+				<div class="col-sm-4 offer" >
+					<img src="offer.png" alt='Offer'>
+				</div>
+				<div class="col-sm-4 offer">
+					<img src="offer.png" alt='Offer'>
+				</div>				
 			</div>
 			<div class="col-md-3 col-sm-12 list">
 					
@@ -65,22 +73,37 @@
 		font-family: cursive;
 	}
 	.offers{
-		height: 45vh;
+		height: 40vh;
+		width: 100vw;
 		background-color: #005062;
 	}
 	.navbar-brand img{
 		height: 10vh;
 		width: 6vw;
-  }
-
+	}
+	.offers img{
+		height:15vh;
+		margin-top: 15vh;
+	}
+	.offer{		
+		float: left;
+		text-align: center;
+	}
+	
 	@media only screen and (max-width: 767px) {
   .list {
     height: 20vh;
 	border-bottom: 1px solid gray;
+	border-right: 0px;
   }
   .menu{
 	  height: 80vh;
-  }
+  }  
   
 }
+	@media only screen and (max-width: 577px) {
+		.offer{
+			width: 33.33%;
+		}
+	}
 </style>
